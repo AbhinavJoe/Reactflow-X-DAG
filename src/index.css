@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #80736b; /* A balanced medium gray for primary elements */
+  --secondary: #aeaca2; /* A lighter gray for secondary elements */
+  --bgcol: #a69984; /* Clean white background */
+  --boardCol: #f3f4f6; /* Very subtle gray for containers/boards */
+}
+
+body {
+  background: #ffffff;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.scroll-container {
+  height: full;
+  overflow-y: scroll;
+  padding: 8px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 10px;
+  background: var(--boardcol);
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+.scroll-container::-webkit-scrollbar-button {
+  display: none;
+}
