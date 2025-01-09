@@ -26,8 +26,8 @@ export const PipelineToolbar = () => {
                     <DraggableNode type='automation' label='Automation' icon={<TbAutomation />} />
                     <SubmitButton />
                 </div>
-                <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white', cursor: 'pointer', padding: 20 }} onClick={() => window.location.reload()}>
-                    @AbhinavJoe
+                <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white', cursor: 'pointer', padding: 10 }} onClick={() => window.location.reload()}>
+                    Reactflow-X-DAG@AbhinavJoe
                 </span>
             </div>
         </div>
